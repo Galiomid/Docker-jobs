@@ -26,5 +26,4 @@ CMD [ "-m" ]
 VOLUME "/myvol"
 VOLUME "/peter"
 USER peter
-USER erci
 WORKDIR /root/my-test
