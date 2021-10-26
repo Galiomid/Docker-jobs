@@ -4,6 +4,7 @@ RUN apt update -y
 RUN apt install vim wget curl -y
 RUN mkdir /root/my-test
 RUN mkdir /root/my-test1
+RUN touch /root/my-test/jenkins.sh
 
 LABEL "country"="USA"
 LABEL "state"="illinois"
