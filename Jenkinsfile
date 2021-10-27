@@ -10,11 +10,5 @@ pipeline {
             sh 'sudo docker rmi -f $A || true'
            }
         }
-        stage('build docker images') {
-            steps {
-                sh 'sudo docker build -t nigieu/geraldine:${BUILD_NUMBER} .'
-             sh 'sudo docker login -u nigieu -p watidocker'
-            }    
-        }
     }
 }
