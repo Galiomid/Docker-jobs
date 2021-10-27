@@ -10,5 +10,10 @@ pipeline {
             sh 'sudo docker rmi -f $A || true'
            }
         }
+        stage('docker build') {
+            steps {
+            sh 'docker build -t nigieu/geraldine .'
+           }
+        }
     }
 }
