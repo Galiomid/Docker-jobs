@@ -12,7 +12,7 @@ pipeline {
         }
         stage('docker build') {
             steps {
-            sh 'docker build -t nigieu/geraldine .'
+            sh 'docker build -t nigieu/geraldine:001 .'
            }
         }
     }
