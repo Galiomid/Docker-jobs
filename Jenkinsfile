@@ -12,7 +12,7 @@ pipeline {
         }
         stage('docker build') {
             steps {
-            sh 'ls'
+            sh 'docker build -t nigieu/gerald .'
            }
         }
     }
