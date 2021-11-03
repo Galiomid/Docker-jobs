@@ -12,7 +12,7 @@ pipeline {
         }
         stage('docker build') {
             steps {
-            sh 'docker build -t nigieu/gerald .'
+            sh 'sudo docker build -t nigieu/gerald .'
            }
         }
     }
