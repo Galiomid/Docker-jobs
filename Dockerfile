@@ -6,7 +6,7 @@ RUN apt update -y
 RUN apt install vim wget   curl -y
 RUN mkdir /root/my-test
 RUN mkdir /root/my-test1
-RUN apt-get update 
+RUN apt-get update -y
 RUN apt-get clean 
 LABEL "cameroon"="yaounde"
 LABEL "gabon"="libreville"
