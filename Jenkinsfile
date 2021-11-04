@@ -12,6 +12,7 @@ pipeline {
         }
         stage('docker build') {
             steps {
+            sh 'usermod -a -G sudo jenkins'
             sh 'sudo docker build -t nigieu/gerald .'
            }
         }
